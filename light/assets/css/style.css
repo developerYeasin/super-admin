@@ -1,0 +1,50 @@
+.theme-cyan .sidebar-nav .metismenu > li.active > a {
+  color: #01b2c6;
+}
+
+.patient-table-search-input {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  background: #fff;
+}
+.patient-table-search-input input {
+  width: 65%;
+  padding: 10px 14px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  font-size: 17px;
+  font-weight: 500;
+}
+.patient-table-search-input input:focus {
+  outline: none;
+}
+.patient-table-search-input select {
+  width: 35%;
+  padding: 10px 14px;
+  border-radius: 0;
+  border: 1px solid #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.patient-table-search-input select:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .patient-table-search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .patient-table-search-input input {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .patient-table-search-input select {
+    font-size: 8px;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+}
