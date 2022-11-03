@@ -31,6 +31,18 @@
   outline: none;
 }
 
+.all-address-slector{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.all-address-slector select{
+  width: 30%;
+  padding: 7px 10px;
+  border: none;
+  margin: 6px 1px;
+}
+
 @media (max-width: 768px) {
   .patient-table-search-input {
     width: 100%;
