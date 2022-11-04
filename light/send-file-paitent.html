@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>document</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="Lucid Bootstrap 4.1.1 Admin Template" />
+    <meta name="author" content="WrapTheme, design by: ThemeMakker.com" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/vendor/chartist/css/chartist.min.css" />
+    <link rel="stylesheet" href="../assets/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css" />
+    <link rel="stylesheet" href="../assets/vendor/toastr/toastr.min.css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/color_skins.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="theme-cyan">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img src="https://www.wrraptheme.com/templates/lucid/hospital/assets/images/logo-icon.svg" width="48"
+                    height="48" alt="Lucid" />
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-btn">
+                    <button type="button" class="btn-toggle-offcanvas">
+                        <i class="lnr lnr-menu fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="navbar-brand">
+                    <a href="index.html"><img
+                            src="https://www.wrraptheme.com/templates/lucid/hospital/assets/images/logo.svg"
+                            alt="Lucid Logo" class="img-responsive logo" /></a>
+                </div>
+                <div class="navbar-right">
+                    <form id="navbar-search" class="navbar-form search-form">
+                        <input value="" class="form-control" placeholder="Search here..." type="text" />
+                        <button type="button" class="btn btn-default">
+                            <i class="icon-magnifier"></i>
+                        </button>
+                    </form>
+                    <div id="navbar-menu">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="doctor-events.html" class="icon-menu d-none d-sm-block d-md-none d-lg-block"><i
+                                        class="icon-calendar"></i></a>
+                            </li>
+                            <li>
+                                <a href="app-chat.html" class="icon-menu d-none d-sm-block"><i
+                                        class="icon-bubbles"></i></a>
+                            </li>
+                            <li>
+                                <a href="app-inbox.html" class="icon-menu d-none d-sm-block"><i
+                                        class="icon-envelope"></i><span class="notification-dot"></span></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                    <i class="icon-bell"></i>
+                                    <span class="notification-dot"></span>
+                                </a>
+                                <ul class="dropdown-menu notifications">
+                                    <li class="header">
+                                        <strong>You have 4 new Notifications</strong>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-info text-warning"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">
+                                                        Campaign <strong>Holiday Sale</strong> is nearly
+                                                        reach budget limit.
+                                                    </p>
+                                                    <span class="timestamp">10:00 AM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-like text-success"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">
+                                                        Your New Campaign <strong>Holiday Sale</strong> is
+                                                        approved.
+                                                    </p>
+                                                    <span class="timestamp">11:30 AM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-pie-chart text-info"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">
+                                                        Website visits from Twitter is 27% higher than
+                                                        last week.
+                                                    </p>
+                                                    <span class="timestamp">04:00 PM Today</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <i class="icon-info text-danger"></i>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="text">
+                                                        Error on website analytics configurations
+                                                    </p>
+                                                    <span class="timestamp">Yesterday</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="footer">
+                                        <a href="javascript:void(0);" class="more">See all notifications</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle icon-menu"
+                                    data-toggle="dropdown"><i class="icon-equalizer"></i></a>
+                                <ul class="dropdown-menu user-menu menu-icon">
+                                    <li class="menu-heading">ACCOUNT SETTINGS</li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-note"></i> <span>Basic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-equalizer"></i>
+                                            <span>Preferences</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-lock"></i> <span>Privacy</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-bell"></i>
+                                            <span>Notifications</span></a>
+                                    </li>
+                                    <li class="menu-heading">BILLING</li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-credit-card"></i>
+                                            <span>Payments</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-printer"></i>
+                                            <span>Invoices</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><i class="icon-refresh"></i>
+                                            <span>Renewals</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="page-login.html" class="icon-menu"><i class="icon-login"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="left-sidebar" class="sidebar">
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <img src="../assets/images/user.png" class="rounded-circle user-photo" alt="User Profile Picture" />
+                    <div class="dropdown">
+                        <span>Welcome,</span>
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name"
+                            data-toggle="dropdown"><strong>Dr. Chandler
+                                Bing</strong></a>
+                        <ul class="dropdown-menu dropdown-menu-right account">
+                            <li>
+                                <a href="doctor-profile.html"><i class="icon-user"></i>My Profile</a>
+                            </li>
+                            <li>
+                                <a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="page-login.html"><i class="icon-power"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <ul class="row list-unstyled">
+                        <li class="col-4">
+                            <small>Exp</small>
+                            <h6>14</h6>
+                        </li>
+                        <li class="col-4">
+                            <small>Awards</small>
+                            <h6>13</h6>
+                        </li>
+                        <li class="col-4">
+                            <small>Clients</small>
+                            <h6>213</h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#sub_menu"><i class="icon-grid"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#Chat"><i class="icon-book-open"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#setting"><i class="icon-settings"></i></a>
+                    </li>
+                </ul>
+
+                <div class="tab-content p-l-0 p-r-0">
+                    <div class="tab-pane active" id="menu">
+                        <nav class="sidebar-nav">
+                            <ul class="main-menu metismenu">
+                                <li class="">
+                                    <a href="index.html"><i class="icon-home"></i><span>Dashbosrd</span></a>
+                                </li>
+                                <li class=""> <a href="all-users.html"><i class="fa-solid fa-users"></i><span>All
+                                            Users</span></a> </li>
+                                <li class=""> <a href="doctor-list.html"><i
+                                            class="fa-solid fa-user-doctor"></i><span>Doctor
+                                            List</span></a> </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="active has-arrow"><i
+                                            class="fa-solid fa-user-injured"></i><span>Patient List</span></a>
+                                    <ul>
+                                        <li><a href="chamber-paitent.html">Chamber Patient</a></li>
+                                        <li><a href="online-paitent.html">Online Patient</a></li>
+                                        <li class="active"><a href="send-file-paitent.html">Send File</a></li>
+                                        <li><a href="receive-file-paitent.html">Receive File</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class=""> <a href="bill-information.html"><i
+                                            class="fa-solid fa-money-bill-1-wave"></i><span>Bill
+                                            Information</span></a> </li>
+                                <li>
+                                    <a href="javascript:void(0);" class="has-arrow"><i
+                                            class="fa-solid fa-comments"></i></i><span>Chat
+                                            history</span></a>
+                                    <ul>
+                                        <li><a href="doctor-chat.html">doctor chat</a></li>
+                                        <li><a href="patient-chat.html">patient chat</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""> <a href="delete-file.html"><i
+                                            class="fa-solid fa-trash"></i></i><span>Delete
+                                            File</span></a> </li>
+                                <li class=""> <a href="blog-panel.html"><i class="fa-solid fa-blog"></i><span>Blog
+                                            panel</span></a>
+                                </li>
+                                <li class=""> <a href="study-panel.html"><i
+                                            class="fa-solid fa-graduation-cap"></i><span>Study
+                                            panel</span></a> </li>
+                                <li class=""> <a href="disease-panel.html"><i
+                                            class="fa-solid fa-disease"></i><span>Disease
+                                            panel</span></a> </li>
+                                <li class=""> <a href="shop-panel.html"><i class="fa-solid fa-shop"></i><span>shop
+                                            panel</span></a>
+                                </li>
+                                <li class=""> <a href="support-panel.html"><i
+                                            class="fa-solid fa-headset"></i><span>support
+                                            panel</span></a> </li>
+                                <li class=""> <a href="profile.html"><i
+                                            class="fa-solid fa-address-card"></i><span>profile</span></a>
+                                </li>
+                                <li class=""> <a href="setting.html"><i
+                                            class="fa-solid fa-gears"></i><span>Setting</span></a> </li>
+                                <li class=""> <a href="log-out.html"><i
+                                            class="fa-solid fa-right-from-bracket"></i><span>Log
+                                            out</span></a> </li>
+                                <li class=""> <a href="log-out.html"><i class="icon-home"></i><span></span></a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tab-pane" id="sub_menu">
+                        <nav class="sidebar-nav">
+                            <ul class="main-menu metismenu">
+                                <li>
+                                    <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i> <span>UI
+                                            Elements</span></a>
+                                    <ul>
+                                        <li><a href="ui-typography.html">Typography</a></li>
+                                        <li><a href="ui-tabs.html">Tabs</a></li>
+                                        <li><a href="ui-buttons.html">Buttons</a></li>
+                                        <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
+                                        <li><a href="ui-icons.html">Icons</a></li>
+                                        <li><a href="ui-notifications.html">Notifications</a></li>
+                                        <li><a href="ui-colors.html">Colors</a></li>
+                                        <li><a href="ui-dialogs.html">Dialogs</a></li>
+                                        <li><a href="ui-list-group.html">List Group</a></li>
+                                        <li><a href="ui-media-object.html">Media Object</a></li>
+                                        <li><a href="ui-modals.html">Modals</a></li>
+                                        <li><a href="ui-nestable.html">Nestable</a></li>
+                                        <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                        <li><a href="ui-range-sliders.html">Range Sliders</a></li>
+                                        <li><a href="ui-treeview.html">Treeview</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#forms" class="has-arrow"><i class="icon-pencil"></i>
+                                        <span>Forms</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="forms-validation.html">Form Validation</a>
+                                        </li>
+                                        <li>
+                                            <a href="forms-advanced.html">Advanced Elements</a>
+                                        </li>
+                                        <li><a href="forms-basic.html">Basic Elements</a></li>
+                                        <li><a href="forms-wizard.html">Form Wizard</a></li>
+                                        <li>
+                                            <a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a>
+                                        </li>
+                                        <li><a href="forms-cropping.html">Image Cropping</a></li>
+                                        <li><a href="forms-summernote.html">Summernote</a></li>
+                                        <li><a href="forms-editors.html">CKEditor</a></li>
+                                        <li><a href="forms-markdown.html">Markdown</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#Tables" class="has-arrow"><i class="icon-tag"></i> <span>Tables</span></a>
+                                    <ul>
+                                        <li>
+                                            <a href="table-basic.html">Tables Example<span
+                                                    class="badge badge-info float-right">New</span></a>
+                                        </li>
+                                        <li><a href="table-normal.html">Normal Tables</a></li>
+                                        <li>
+                                            <a href="table-jquery-datatable.html">Jquery Datatables</a>
+                                        </li>
+                                        <li><a href="table-editable.html">Editable Tables</a></li>
+                                        <li><a href="table-color.html">Tables Color</a></li>
+                                        <li>
+                                            <a href="table-filter.html">Table Filter
+                                                <span class="badge badge-info float-right">New</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="table-dragger.html">Table dragger
+                                                <span class="badge badge-info float-right">New</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#charts" class="has-arrow"><i class="icon-bar-chart"></i>
+                                        <span>Charts</span></a>
+                                    <ul>
+                                        <li><a href="chart-e.html">E Charts</a></li>
+                                        <li><a href="chart-morris.html">Morris</a></li>
+                                        <li><a href="chart-flot.html">Flot</a></li>
+                                        <li><a href="chart-chartjs.html">ChartJS</a></li>
+                                        <li><a href="chart-jquery-knob.html">Jquery Knob</a></li>
+                                        <li>
+                                            <a href="chart-sparkline.html">Sparkline Chart</a>
+                                        </li>
+                                        <li><a href="chart-peity.html">Peity</a></li>
+                                        <li><a href="chart-c3.html">C3 Charts</a></li>
+                                        <li><a href="chart-gauges.html">Gauges</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#Maps" class="has-arrow"><i class="icon-map"></i> <span>Maps</span></a>
+                                    <ul>
+                                        <li><a href="map-google.html">Google Map</a></li>
+                                        <li><a href="map-yandex.html">Yandex Map</a></li>
+                                        <li><a href="map-jvectormap.html">jVector Map</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="tab-pane p-l-15 p-r-15" id="Chat">
+                        <form>
+                            <div class="input-group m-b-20">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search..." />
+                            </div>
+                        </form>
+                        <ul class="right_chat list-unstyled">
+                            <li class="online">
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="" />
+                                        <div class="media-body">
+                                            <span class="name">Dr. Chris Fox</span>
+                                            <span class="message">Dentist</span>
+                                            <span class="badge badge-outline status"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="online">
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt="" />
+                                        <div class="media-body">
+                                            <span class="name">Dr. Joge Lucky</span>
+                                            <span class="message">Gynecologist</span>
+                                            <span class="badge badge-outline status"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="offline">
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt="" />
+                                        <div class="media-body">
+                                            <span class="name">Dr. Isabella</span>
+                                            <span class="message">CEO, WrapTheme</span>
+                                            <span class="badge badge-outline status"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="offline">
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="" />
+                                        <div class="media-body">
+                                            <span class="name">Dr. Folisise Chosielie</span>
+                                            <span class="message">Physical Therapy</span>
+                                            <span class="badge badge-outline status"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="online">
+                                <a href="javascript:void(0);">
+                                    <div class="media">
+                                        <img class="media-object" src="../assets/images/xs/avatar3.jpg" alt="" />
+                                        <div class="media-body">
+                                            <span class="name">Dr. Alexander</span>
+                                            <span class="message">Audiology</span>
+                                            <span class="badge badge-outline status"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane p-l-15 p-r-15" id="setting">
+                        <h6>Choose Skin</h6>
+                        <ul class="choose-skin list-unstyled">
+                            <li data-theme="purple">
+                                <div class="purple"></div>
+                                <span>Purple</span>
+                            </li>
+                            <li data-theme="blue">
+                                <div class="blue"></div>
+                                <span>Blue</span>
+                            </li>
+                            <li data-theme="cyan" class="active">
+                                <div class="cyan"></div>
+                                <span>Cyan</span>
+                            </li>
+                            <li data-theme="green">
+                                <div class="green"></div>
+                                <span>Green</span>
+                            </li>
+                            <li data-theme="orange">
+                                <div class="orange"></div>
+                                <span>Orange</span>
+                            </li>
+                            <li data-theme="blush">
+                                <div class="blush"></div>
+                                <span>Blush</span>
+                            </li>
+                        </ul>
+                        <hr />
+                        <h6>General Settings</h6>
+                        <ul class="setting-list list-unstyled">
+                            <li>
+                                <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" />
+                                    <span>Report Panel Usag</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" />
+                                    <span>Email Redirect</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" checked />
+                                    <span>Notifications</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" checked />
+                                    <span>Auto Updates</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" />
+                                    <span>Offline</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" checked />
+                                    <span>Location Permission</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="main-content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-8 col-sm-12">
+                            <h2>
+                                <a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i
+                                        class="fa fa-arrow-left"></i></a>
+                                Dashboard
+                            </h2>
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html"><i class="icon-home"></i></a>
+                                </li>
+                                <li class="breadcrumb-item active">Dashboard</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-10 col-md-6 col-sm-12 text-right">
+                            <div class="d-flex justify-content-end ">
+                                <div class="card px-3 py-1 text-left mr-1 " style="width: 180px;">
+                                    <div id="top_counter1" class="carousel vert slide top_counter" data-ride="carousel"
+                                        data-interval="2500">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="icon"><i class="fa fa-user"></i></div>
+                                                <div class="content">
+                                                    <div class="text">Total Patient</div>
+                                                    <h5 class="number">215</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="icon"><i class="fa fa-user"></i></div>
+                                                <div class="content">
+                                                    <div class="text">New Patient</div>
+                                                    <h5 class="number">21</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card px-3 py-1 text-left " style="width: 180px;">
+                                    <div id="top_counter1" class="carousel vert slide top_counter" data-ride="carousel"
+                                        data-interval="2500">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="icon"><i class="fa fa-user"></i></div>
+                                                <div class="content">
+                                                    <div class="text">Total Patient</div>
+                                                    <h5 class="number">215</h5>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <div class="icon"><i class="fa fa-user"></i></div>
+                                                <div class="content">
+                                                    <div class="text">New Patient</div>
+                                                    <h5 class="number">21</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bh_chart hidden-xs">
+                                    <div class="float-left m-r-15">
+                                        <small>Visitors</small>
+                                        <h6 class="mb-0 mt-1"><i class="icon-user"></i> 1,784</h6>
+                                    </div>
+                                    <span class="bh_visitors float-right">2,5,1,8,3,6,7,5</span>
+                                </div>
+                                <div class="bh_chart hidden-sm">
+                                    <div class="float-left m-r-15">
+                                        <small>Visits</small>
+                                        <h6 class="mb-0 mt-1"><i class="icon-globe"></i> 325</h6>
+                                    </div>
+                                    <span class="bh_visits float-right">10,8,9,3,5,8,5</span>
+                                </div>
+                                <div class="bh_chart hidden-sm">
+                                    <div class="float-left m-r-15">
+                                        <small>Chats</small>
+                                        <h6 class="mb-0 mt-1"><i class="icon-bubbles"></i> 13</h6>
+                                    </div>
+                                    <span class="bh_chats float-right">1,8,5,6,2,4,3,2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-7 m-auto ">
+                        <div class="patient-table-search-input w-100 m-0 ">
+                            <input type="text" placeholder="Search by Name/Phone/E-mail">
+                        </div>
+                        <div class="all-address-slector">
+                            <select>
+                                <option value="">All</option>
+                                <option value="">Bangladesh</option>
+                                <option value="">Indian</option>
+                                <option value="">American</option>
+                                <option value="">Candian</option>
+                            </select>
+                            <select>
+                                <option value="">State</option>
+                            </select>
+                            <select>
+                                <option value="">City</option>
+                            </select>
+                            <select>
+                                <option value="">Sub city</option>
+                            </select>
+                            <select>
+                                <option value="">Police Station</option>
+                            </select>
+                            <select>
+                                <option value="">Village</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="table-card-title">
+                            <h4>Total file send all doctor</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-4 ">
+                        <div class="table-responsive table_middel">
+                            <table class="table mb-3 table-hover table-bordered ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>SL</th>
+                                        <th>Date</th>
+                                        <th>UserId</th>
+                                        <th>Sender Doctor</th>
+                                        <th>Chamber Patient</th>
+                                        <th>Online Patient</th>
+                                        <th>Total Patient</th>
+                                        <th>Prescribed by</th>
+                                        <th>comment</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>31-jan-2021</td>
+                                        <td>189226</td>
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center ">
+                                                <div class="">
+                                                    <img src="../assets/images/xs/avatar3.jpg"
+                                                        class="rounded-circle width30 m-r-15" alt="profile-image">
+                                                </div>
+                                                <div class="">
+                                                    <span>Dr. Aman</span><br>
+                                                    <span>Ph:019283-79273</span><br>
+                                                    <span>Dhaka, Bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>34</td>
+                                        <td>34</td>
+                                        <td>34</td>
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center ">
+                                                <div class="">
+                                                    <img src="../assets/images/xs/avatar3.jpg"
+                                                        class="rounded-circle width30 m-r-15" alt="profile-image">
+                                                </div>
+                                                <div class="">
+                                                    <span>Dr. Aman</span><br>
+                                                    <span>Ph:019283-79273</span><br>
+                                                    <span>Dhaka, Bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>that's a new comment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-md-7 m-auto ">
+                        <div class="patient-table-search-input w-100 m-0 ">
+                            <input type="text" placeholder="Search by Name/Phone/E-mail">
+                        </div>
+                        <div class="all-address-slector">
+                            <select>
+                                <option value="">All</option>
+                                <option value="">Bangladesh</option>
+                                <option value="">Indian</option>
+                                <option value="">American</option>
+                                <option value="">Candian</option>
+                            </select>
+                            <select>
+                                <option value="">State</option>
+                            </select>
+                            <select>
+                                <option value="">City</option>
+                            </select>
+                            <select>
+                                <option value="">Sub city</option>
+                            </select>
+                            <select>
+                                <option value="">Police Station</option>
+                            </select>
+                            <select>
+                                <option value="">Village</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-3">
+                        <div class="table-card-title">
+                            <h4>Total file send all doctor</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-4 ">
+                        <div class="table-responsive table_middel">
+                            <table class="table mb-3 table-hover table-bordered ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>SL</th>
+                                        <th>UserId</th>
+                                        <th>Year</th>
+                                        <th>Sender Doctor</th>
+                                        <th>Total send</th>
+                                        <th>Total Doctor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>31-jan-2021</td>
+                                        <td>2018</td>
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center ">
+                                                <div class="">
+                                                    <img src="../assets/images/xs/avatar3.jpg"
+                                                        class="rounded-circle width30 m-r-15" alt="profile-image">
+                                                </div>
+                                                <div class="">
+                                                    <span>Dr. Aman</span><br>
+                                                    <span>Ph:019283-79273</span><br>
+                                                    <span>Dhaka, Bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>34</td>
+                                        <td>34</td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
+    <script src="assets/bundles/chartist.bundle.js"></script>
+    <script src="assets/bundles/knob.bundle.js"></script>
+    <script src="assets/bundles/flotscripts.bundle.js"></script>
+    <script src="../assets/vendor/toastr/toastr.js"></script>
+    <script src="../assets/vendor/flot-charts/jquery.flot.selection.js"></script>
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

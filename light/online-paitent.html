@@ -254,7 +254,7 @@
                       class="fa-solid fa-user-injured"></i><span>Patient List</span></a>
                   <ul>
                     <li><a href="chamber-paitent.html">Chamber Patient</a></li>
-                    <li><a href="online-paitent.html">Online Patient</a></li>
+                    <li class="active"><a href="online-paitent.html">Online Patient</a></li>
                     <li><a href="send-file-paitent.html">Send File</a></li>
                     <li><a href="receive-file-paitent.html">Receive File</a></li>
                   </ul>
@@ -646,7 +646,7 @@
           </div>
           <div class="col-md-6 mt-3">
             <div class="table-card-title">
-              <h4>Recent User</h4>
+              <h4>Online Patient</h4>
             </div>
           </div>
           <div class="col-md-12 mt-4 ">
@@ -654,22 +654,26 @@
               <table class="table mb-3 table-hover table-bordered ">
                 <thead class="thead-dark">
                   <tr>
-                    <th>SL</th>
-                    <th>User Id</th>
-                    <th>User Type</th>
-                    <th>Name</th>
-                    <th>Join Date</th>
-                    <th>Status</th>
-                    <th>Succes</th>
-                    <th>Dec/ain</th>
-                    <th>Comment</th>
+                    <th rowspan="2">SL</th>
+                    <th rowspan="2">UserId</th>
+                    <th rowspan="2">Patient Type</th>
+                    <th rowspan="2">Patient Name</th>
+                    <th rowspan="2">Prescribed by</th>
+                    <th colspan="2">Last Medecine</th>
+                    <th rowspan="2">Join Date</th>
+                    <th rowspan="2">Patiend under of</th>
+                    <th rowspan="2">View Form</th>
+                  </tr>
+                  <tr>
+                    <th>Remedy</th>
+                    <th>Power</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Doctor</td>
+                    <td>11</td>
+                    <td>189226</td>
+                    <td>Chamber</td>
                     <td>
                       <div class="d-flex justify-content-start align-items-center ">
                         <div class="">
@@ -683,16 +687,41 @@
                         </div>
                       </div>
                     </td>
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center ">
+                        <div class="">
+                          <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle width30 m-r-15"
+                            alt="profile-image">
+                        </div>
+                        <div class="">
+                          <span>Dr. Aman</span><br>
+                          <span>Ph:019283-79273</span><br>
+                          <span>Dhaka, Bd</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Sulphur</td>
+                    <td>m/09</td>
                     <td>31-jan-2021</td>
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center ">
+                        <div class="">
+                          <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle width30 m-r-15"
+                            alt="profile-image">
+                        </div>
+                        <div class="">
+                          <span>Dr. Aman</span><br>
+                          <span>Ph:019283-79273</span><br>
+                          <span>Dhaka, Bd</span>
+                        </div>
+                      </div>
+                    </td>
                     <td><span class="badge badge-success">Active</span></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                   </tr>
                   <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Patient</td>
+                    <td>11</td>
+                    <td>189226</td>
+                    <td>Chamber</td>
                     <td>
                       <div class="d-flex justify-content-start align-items-center ">
                         <div class="">
@@ -706,16 +735,6 @@
                         </div>
                       </div>
                     </td>
-                    <td>31-jan-2021</td>
-                    <td><span class="badge badge-info">panding</span></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>1</td>
-                    <td>Patient</td>
                     <td>
                       <div class="d-flex justify-content-start align-items-center ">
                         <div class="">
@@ -729,11 +748,23 @@
                         </div>
                       </div>
                     </td>
+                    <td>Sulphur</td>
+                    <td>m/09</td>
                     <td>31-jan-2021</td>
-                    <td><span class="badge badge-secondary">Review</span></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>
+                      <div class="d-flex justify-content-start align-items-center ">
+                        <div class="">
+                          <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle width30 m-r-15"
+                            alt="profile-image">
+                        </div>
+                        <div class="">
+                          <span>Dr. Aman</span><br>
+                          <span>Ph:019283-79273</span><br>
+                          <span>Dhaka, Bd</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td><span class="badge badge-success">Active</span></td>
                   </tr>
                 </tbody>
               </table>
