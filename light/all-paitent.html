@@ -249,12 +249,11 @@
                 <li class=""> <a href="all-users.html"><i class="fa-solid fa-users"></i><span>All Users</span></a> </li>
                 <li class=""> <a href="doctor-list.html"><i class="fa-solid fa-user-doctor"></i><span>Doctor
                       List</span></a> </li>
-                <li>
+                <li class="active">
                   <a href="javascript:void(0);" class="active has-arrow"><i
                       class="fa-solid fa-user-injured"></i><span>Patient List</span></a>
                   <ul>
-                    <li><a href="chamber-paitent.html">Chamber Patient</a></li>
-                    <li class="active"><a href="online-paitent.html">Online Patient</a></li>
+                    <li class="active" ><a href="all-paitent.html">all Patient</a></li>
                     <li><a href="send-file-paitent.html">Send File</a></li>
                     <li><a href="receive-file-paitent.html">Receive File</a></li>
                   </ul>
@@ -621,7 +620,12 @@
             </div>
             <div class="all-address-slector">
               <select>
-                <option value="">All</option>
+                <option value="">All Patient</option>
+                <option value="">Online Patient</option>
+                <option value="">Chamger Patient</option>
+              </select>
+              <select>
+                <option value="">All Country</option>
                 <option value="">Bangladesh</option>
                 <option value="">Indian</option>
                 <option value="">American</option>
@@ -716,7 +720,7 @@
                         </div>
                       </div>
                     </td>
-                    <td><span class="badge badge-success">Active</span></td>
+                    <td><span class="badge badge-success">Active</span><a class="badge badge-dark" href="patient-profile.html"><i class="fa-solid fa-eye"></i></a></td>
                   </tr>
                   <tr>
                     <td>11</td>
