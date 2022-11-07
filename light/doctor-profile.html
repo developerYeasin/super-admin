@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 
     <link rel="stylesheet" href="assets/css/main.css">
@@ -287,32 +287,43 @@
                     <div class="tab-pane" id="doctor_menu">
                         <nav class="sidebar-nav">
                             <ul class="main-menu metismenu">
-                                <li class=""> <a href="index.html"><i class="icon-home"></i><span>Dashboard</span></a>
+                                <li class="">
+                                    <a href="./doctor/index.html"><i class="icon-home"></i><span>Dashboard</span></a>
                                 </li>
-                                <li class=""><a href="create-new-form.html"><i
-                                            class="fa-solid fa-person-circle-plus"></i><span>create
-                                            a new form</span></a></li>
-                                <li class=""><a href="case-form-history.html"><i class="fa-solid fa-list"></i><span>Case
-                                            form
-                                            history</span></a></li>
-                                <li class=""><a href="create-new-darf.html"><i
-                                            class="fa-solid fa-circle-half-stroke"></i><span>Drafts</span></a></li>
-                                <li class=""><a href="patient-chat-list.html"><i
-                                            class="fa-solid fa-hospital-user"></i><span>chat
+                                <li>
+                                    <a href="./doctor/create-new-patient.html"><i
+                                            class="fa-solid fa-person-circle-plus"></i><span>create a new
+                                            patient</span></a>
+                                </li>
+                                <li class=""><a href="./doctor/patient-list.html"><i class="fa-solid fa-list"></i><span>patient
                                             list</span></a></li>
-                                <li class=""><a href="doctors-list.html"><i
-                                            class="fa-solid fa-user-doctor"></i><span>doctor
-                                            list</span></a></li>
-                                <li class="active"><a href="bill-info.html"><i
+                                <li class=""><a href="./doctor/send-case-form.html"><i
+                                            class="fa-solid fa-share-from-square"></i><span>send case form</span></a>
+                                </li>
+                                <li class=""><a href="./doctor/received-case-form.html"><i
+                                            class="fa-brands fa-get-pocket"></i><span>received case form</span></a></li>
+                                <li class=""><a href="./doctor/create-new-patient-darf.html"><i
+                                            class="fa-solid fa-circle-half-stroke"></i><span>Darf</span></a></li>
+                                <li class=""><a href="./doctor/doctors-list.html"><i
+                                            class="fa-solid fa-user-doctor"></i><span>doctor list</span></a></li>
+                                <li class=""><a href="./doctor/doctor-chat-list.html"><i
+                                            class="fa-solid fa-comment-dots"></i><span>doctor chat list</span></a></li>
+                                <li class=""><a href="./doctor/patient-chat-list.html"><i
+                                            class="fa-solid fa-hospital-user"></i><span>petient chat list</span></a>
+                                </li>
+                                <li class=""><a href="./doctor/bill-info.html"><i
                                             class="fa-sharp fa-solid fa-file-invoice-dollar"></i><span>bill
                                             info</span></a></li>
-                                <li class=""><a href="notification.html"><i
-                                            class="fa-solid fa-money-bill-1-wave"></i><span>Notifiction</span></a></li>
-                                <li class=""><a href="profile.html"><i
-                                            class="fa-solid fa-address-card"></i><span>profile</span></a>
+                                <li class=""><a href="./doctor/payment-withrow.html"><i
+                                            class="fa-solid fa-money-bill-1-wave"></i><span>payment withrow</span></a>
                                 </li>
-                                <li class=""><a href="change-passowrd.html"><i class="fa-solid fa-lock"></i><span>change
+                                <li class=""><a href="./doctor/profile.html"><i
+                                            class="fa-solid fa-address-card"></i><span>profile</span></a></li>
+                                <li class=""><a href="./doctor/change-passowrd.html"><i class="fa-solid fa-lock"></i><span>change
                                             password</span></a></li>
+                                <li class=""><a href="./doctor/terms-condition.html"><i
+                                            class="fa-solid fa-temperature-arrow-up"></i><span>terms &
+                                            condition</span></a></li>
                                 <!-- <li class=""><a href="logout.html"><i
                                             class="fa-solid fa-right-from-bracket"></i><span>logout</span></a></li> -->
                             </ul>
@@ -320,147 +331,7 @@
                     </div>
 
 
-                    <!-- <div class="tab-pane p-l-15 p-r-15" id="Chat">
-                        <form>
-                            <div class="input-group m-b-20">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="icon-magnifier"></i></span>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Search..." />
-                            </div>
-                        </form>
-                        <ul class="right_chat list-unstyled">
-                            <li class="online">
-                                <a href="javascript:void(0);">
-                                    <div class="media">
-                                        <img class="media-object" src="../assets/images/xs/avatar4.jpg" alt="" />
-                                        <div class="media-body">
-                                            <span class="name">Dr. Chris Fox</span>
-                                            <span class="message">Dentist</span>
-                                            <span class="badge badge-outline status"></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="online">
-                                <a href="javascript:void(0);">
-                                    <div class="media">
-                                        <img class="media-object" src="../assets/images/xs/avatar5.jpg" alt="" />
-                                        <div class="media-body">
-                                            <span class="name">Dr. Joge Lucky</span>
-                                            <span class="message">Gynecologist</span>
-                                            <span class="badge badge-outline status"></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="offline">
-                                <a href="javascript:void(0);">
-                                    <div class="media">
-                                        <img class="media-object" src="../assets/images/xs/avatar2.jpg" alt="" />
-                                        <div class="media-body">
-                                            <span class="name">Dr. Isabella</span>
-                                            <span class="message">CEO, WrapTheme</span>
-                                            <span class="badge badge-outline status"></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="offline">
-                                <a href="javascript:void(0);">
-                                    <div class="media">
-                                        <img class="media-object" src="../assets/images/xs/avatar1.jpg" alt="" />
-                                        <div class="media-body">
-                                            <span class="name">Dr. Folisise Chosielie</span>
-                                            <span class="message">Physical Therapy</span>
-                                            <span class="badge badge-outline status"></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="online">
-                                <a href="javascript:void(0);">
-                                    <div class="media">
-                                        <img class="media-object" src="../assets/images/xs/avatar3.jpg" alt="" />
-                                        <div class="media-body">
-                                            <span class="name">Dr. Alexander</span>
-                                            <span class="message">Audiology</span>
-                                            <span class="badge badge-outline status"></span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane p-l-15 p-r-15" id="setting">
-                        <h6>Choose Skin</h6>
-                        <ul class="choose-skin list-unstyled">
-                            <li data-theme="purple">
-                                <div class="purple"></div>
-                                <span>Purple</span>
-                            </li>
-                            <li data-theme="blue">
-                                <div class="blue"></div>
-                                <span>Blue</span>
-                            </li>
-                            <li data-theme="cyan" class="active">
-                                <div class="cyan"></div>
-                                <span>Cyan</span>
-                            </li>
-                            <li data-theme="green">
-                                <div class="green"></div>
-                                <span>Green</span>
-                            </li>
-                            <li data-theme="orange">
-                                <div class="orange"></div>
-                                <span>Orange</span>
-                            </li>
-                            <li data-theme="blush">
-                                <div class="blush"></div>
-                                <span>Blush</span>
-                            </li>
-                        </ul>
-                        <hr />
-                        <h6>General Settings</h6>
-                        <ul class="setting-list list-unstyled">
-                            <li>
-                                <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" />
-                                    <span>Report Panel Usag</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" />
-                                    <span>Email Redirect</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" checked />
-                                    <span>Notifications</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" checked />
-                                    <span>Auto Updates</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" />
-                                    <span>Offline</span>
-                                </label>
-                            </li>
-                            <li>
-                                <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" checked />
-                                    <span>Location Permission</span>
-                                </label>
-                            </li>
-                        </ul>
-                    </div> -->
+                    
                 </div>
             </div>
 
