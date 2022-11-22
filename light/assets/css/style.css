@@ -626,6 +626,14 @@ div#left-sidebar {
 .doctor-select .doctor:hover .change-doctor-btn {
   opacity: 1;
 }
+.billinfo-list{
+  color: #111;
+  text-decoration: underline;
+}
+.billinfo-list:hover{
+  color: #01b2c6;
+  text-decoration: underline;
+}
 
 @media (max-width: 1200px) {
   #left-sidebar {
