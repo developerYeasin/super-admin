@@ -629,6 +629,10 @@ div#left-sidebar {
 .billinfo-list{
   color: #111;
   text-decoration: underline;
+  width: 30%;
+}
+.billinfo-list, .billinfo-list h3{
+  font-size: 21px;
 }
 .billinfo-list:hover{
   color: #01b2c6;
