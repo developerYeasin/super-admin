@@ -653,8 +653,8 @@
                                 <option value="">Decline</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="col-6 ">
+                    </div> -->
+                    <div class="col-6 m-auto ">
                         <div class="patient-table-search-input w-100 m-0 ">
                             <input type="text" placeholder="Search by Name/Phone/E-mail">
                         </div>
@@ -683,7 +683,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <!-- <div class="col-2">
                         <div class="card px-1 mb-0 py-1 mx-3 text-left " style="width: 180px;">
                             <div id="top_counter1" class="carousel vert slide top_counter" data-ride="carousel"
                                 data-interval="2500">
@@ -702,8 +702,8 @@
                             </div>
                         </div>
                         <h5 class="btn btn-danger px-1 mb-0 py-3 mt-3 mx-3" style="width: 180px;">Report</h5>
-                    </div>
-                    <div class="col-6 m-auto">
+                    </div> -->
+                    <!-- <div class="col-6 m-auto">
                         <div class="card">
                             <div class="body p-0 py-1 ">
                                 <div class="date-selector">
@@ -725,17 +725,29 @@
                             <table class="table mb-3 table-hover table-bordered ">
                                 <thead class="thead-dark">
                                     <tr>
-                                        <th>SL</th>
-                                        <th>User Id</th>
-                                        <th>Doctor Name</th>
-                                        <th>Case Taking Dr. Charge</th>
-                                        <th>Online Charge</th>
-                                        <th>Send file charge</th>
-                                        <th>Reccive file Charge</th>
-                                        <th>Status</th>
-                                        <th>Edit</th>
-                                        <th>Details</th>
-                                        <th>comment</th>
+                                        <th rowspan="2">SL</th>
+                                        <th rowspan="2">User Id</th>
+                                        <th rowspan="2">Doctor Name</th>
+                                        <th rowspan="1" colspan="2">Online commission</th>
+                                        <th rowspan="1" colspan="2">Send file charge</th>
+                                        <th rowspan="2">Send file commission</th>
+                                        <th rowspan="1" colspan="2">Receive file charge</th>
+                                        <th rowspan="2">Receive file commission</th>
+                                        <th rowspan="2">Monthly Fee</th>
+                                        <!-- <th rowspan="2">Status</th> -->
+                                        <th rowspan="2">Edit</th>
+                                        <th rowspan="2">Details</th>
+                                        <th rowspan="2">comment</th>
+                                    </tr>
+                                    <tr>
+                                        <th>1<sup>st</sup></th>
+                                        <th>2<sup>nd</sup></th>
+
+                                        <th>1<sup>st</sup></th>
+                                        <th>2<sup>nd</sup></th>
+
+                                        <th>1<sup>st</sup></th>
+                                        <th>2<sup>nd</sup></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -759,11 +771,53 @@
                                         <td>234</td>
                                         <td>3432</td>
                                         <td>3432</td>
-                                        <td><span class="badge badge-success">paid</span></td>
+                                        <td>3432</td>
+                                        <td>234</td>
+                                        <td>3432</td>
+                                        <td>3432</td>
+                                        <td>3432</td>
+                                        <!-- <td><span class="badge badge-success">paid</span></td> -->
                                         <td><span class="badge badge-info">Edit</span></td>
                                         <td><a class="badge badge-dark" href="doctor-profile.html"><i
                                                     class="fa-solid fa-eye"></i></a></td>
                                         <td>It's for comment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mt-4 ">
+                        <div class="table-responsive table_middel">
+                            <h4 class="mb-3 ">Dr. aman: charge setup</h4>
+                            <table class="table mb-3 table-hover table-bordered ">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>User Id</th>
+                                        <th>Doctor Name</th>
+                                        <th>Send file charge</th>
+                                        <th>Reccive file Charge</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="d-flex justify-content-start align-items-center ">
+                                                <div class="">
+                                                    <img src="../assets/images/xs/avatar3.jpg"
+                                                        class="rounded-circle width30 m-r-15" alt="profile-image">
+                                                </div>
+                                                <div class="">
+                                                    <span>Dr. Aman</span><br>
+                                                    <span>Ph:019283-79273</span><br>
+                                                    <span>Dhaka, Bd</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>65145</td>
+                                        <td>234</td>
+                                        <td><span class="badge badge-info">Edit</span></td>
                                     </tr>
                                 </tbody>
                             </table>

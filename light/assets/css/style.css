@@ -215,7 +215,7 @@
 }
 
 #left-sidebar {
-  position: relative !important;
+  /* position: relative !important; */
   height: 100vh;
 }
 
@@ -626,15 +626,16 @@ div#left-sidebar {
 .doctor-select .doctor:hover .change-doctor-btn {
   opacity: 1;
 }
-.billinfo-list{
+.billinfo-list {
   color: #111;
   text-decoration: underline;
   width: 30%;
 }
-.billinfo-list, .billinfo-list h3{
+.billinfo-list,
+.billinfo-list h3 {
   font-size: 21px;
 }
-.billinfo-list:hover{
+.billinfo-list:hover {
   color: #01b2c6;
   text-decoration: underline;
 }
@@ -653,6 +654,113 @@ div#left-sidebar {
     margin-top: 45px;
   }
 }
+
+/* switch button */
+.custom-switch {
+  padding-right: 2.25rem;
+}
+.custom-control {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 1.5rem;
+  padding-right: 1.5rem;
+  padding-left: 0 !important;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+}
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+.custom-control-input {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 1rem;
+  height: 1.25rem;
+  opacity: 0;
+}
+input {
+  overflow: visible;
+}
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+  padding-right: 1rem;
+}
+.custom-control-label::before {
+  position: absolute;
+  top: 0.25rem;
+  /* left: -1.5rem; */
+  left: 100%;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  background-color: #fff;
+  border: #adb5bd solid 1px;
+}
+.custom-control-label::before,
+.custom-file-label,
+.custom-select {
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+.custom-switch .custom-control-label::before {
+  /* left: -2.25rem; */
+  left: 100%;
+  width: 1.75rem;
+  pointer-events: all;
+  border-radius: 0.5rem;
+}
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #007bff;
+  background-color: #007bff;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  -webkit-transform: translateX(0.75rem);
+  transform: translateX(0.75rem);
+}
+.custom-switch .custom-control-label::after {
+  top: calc(0.25rem + 2px);
+  /* left: calc(-2.25rem + 2px); */
+  left: calc(100% + 2px);
+  width: calc(1rem - 4px);
+  height: calc(1rem - 4px);
+  background-color: #adb5bd;
+  border-radius: 0.5rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-transform 0.15s ease-in-out;
+}
+.custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: -1.5rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background: 50% / 50% 50% no-repeat;
+}
+
+/*end switch button */
 
 @media (max-width: 991px) {
   .navbar-button {
