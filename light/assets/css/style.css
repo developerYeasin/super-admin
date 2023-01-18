@@ -821,6 +821,10 @@ input {
   .patient-table-search-input {
     width: 100%;
   }
+  .info-list {
+    display: block !important;
+    text-align: center;
+  }
 }
 @media (max-width: 560px) {
   .user-id {
@@ -888,7 +892,6 @@ input {
     font-size: 10px;
     margin-bottom: 0;
   }
-
   .patient-table-search-input input {
     font-size: 10px;
     font-weight: 400;
@@ -897,5 +900,8 @@ input {
     font-size: 8px;
     font-weight: 500;
     padding: 10px 0;
+  }
+  .billinfo-list h3 {
+    font-size: 20px;
   }
 }
